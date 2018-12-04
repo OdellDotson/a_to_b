@@ -94,10 +94,6 @@ Inline documentation is also present, which provides a more thorough expliation 
 
 ################################### Notes
 
-I spent between 6 and 8 total hours on this project, spread across three days.
-I had a blast with this project! I would have liked to implement some smarter policies if I had more time,
-but I was plesantly surprised that the simple nearest-neighbor pather actually works better than expected.
-
 I've noticed something somewhat interesting about the algorithm's behavior on a 10x10 map when generating a new reqeust each 5 t-steps.
 It seems to reach a steady state of delivering about 2 passengers every 10 time steps, with an average of <10 passengers and <10 active requests.
 
@@ -112,18 +108,5 @@ At the end of the T=1,000,000 simulation, the car had only 3 passengers and 7 re
 
 This made me wonder about settling time of different policies, map sizes, and request rates.
 
-Also wish I had had the time for tests. Unit testing on a lot of these functions 
-would be pretty simple, to validate edge cases and prove validity of the math.
-
-Integration tests that apply a policy to a world_state and ensure that the expected 
-world_state comes back would be a pretty natural thing for testing new policies. I also
-think that this framework provides a strong platform for test driven development. If you
-believe your policy should have specific behavior in specific cases, it's easy enough to 
-define tests that ensure policy(initial_state)=desired_state for all known expected behaviors,
-and the building a policy that passes according to those tests. 
-
 ##
 
-Hoping to solve problems with you in the future,
-Odell Dotson
-odelldotson@gmail.com
